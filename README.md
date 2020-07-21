@@ -41,7 +41,7 @@ The preprocessing of the data is now finished and you can start to map your data
 
 |Experiment name | primer sequence + spacer + RE | path to reference genome | restriction enzyme 1 | restriction enzyme 2 | viewpoint chromosome |
 |---------- | ---------- | ----------|----------|----------|----------|
-|Nanog_enhancer | CGTATGCCAAGAACAGGTAACAGTTTCTGGATC**GATC** | /home/t.severson/resources/hg19_sed.fa | GATC | GTAC | chr6 |
+|E2_1h_vp1_replicate1 | CGTATGCCAAGAACAGGTAACAGTTTCTGGATC**GATC** | /home/t.severson/resources/hg19_sed.fa | GATC | GTAC | chr6 |
 
 Note that the reference should also have bwa index. Also note that the second restriction enzyme is not strictly necessary, but the chromosome id should always be in the 6th column. Given the curre
 nt setup it is not possible to mix restriction enzyme combination or reference genomes. If you have multiple genomes or multiple restriction enzyme combinations please create a seperate index file
