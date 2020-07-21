@@ -1,4 +1,4 @@
-# 4C mapping, Alex's VP1
+# 4C mapping: Alex Kojic VP1
 
 A mapping pipeline that maps and filters 4C data.
 
