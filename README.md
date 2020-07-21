@@ -32,7 +32,7 @@ perl getRepeats.pl gatc_catc_fragment_map/ GATC 50 ~/resources/hg19_sed.fa 50_re
 ## This will break the next script. Add the '50' to the next command. 
 ```
 
-The results will be placed in the directory 50_repeat/. Note the 50, this is the length of the ligated fragment including the restriction site. Note that for every different sequencing length for you 4C experiment, you will need to create a new repeat map. So if you have a sequence length of 75, a primer of 20nt, sequence between the primer and the restriction site of 9nt and a 4nt restriction site, your sequence length should be `75 - 20 - 9 + 4 = 50`. 
+The results will be placed in the directory 50_repeat/. Note the 50, this is the length of the ligated fragment including the restriction site. Note that for every different sequencing length for you 4C experiment, you will need to create a new repeat map. So if you have a sequence length of 75, a primer of 20nt, a spacer sequence of 9nt and a 4nt restriction site, your sequence length should be `75 - 20 - 9 + 4 = 50`. 
 
 
 
