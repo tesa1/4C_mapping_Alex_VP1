@@ -1,7 +1,7 @@
 #### 4C mapping
 A mapping pipeline that maps and filters 4C data.
 
-1. Note::::: Run bwa index on your fasta file first. Fasta file must have 'chr' in it.
+1. **Note::::: Run bwa index on your fasta file first. Fasta file must have 'chr' in it.**
 
 
 In a 4C experiment DNA fragments are ligated to your fragment of interest, which are amplified using an inverse PCR. These fragments need to mapped back to the reference genome. Repetitive fragments need to removed from the analysis. Note that non-covered fragment are also of interest to the analysis, since they signal no interaction at this genomic location.
