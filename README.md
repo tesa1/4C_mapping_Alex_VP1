@@ -1,4 +1,4 @@
-# 4C mapping
+#### 4C mapping
 A mapping pipeline that maps and filters 4C data.
 
 1. Note::::: Run bwa index on your fasta file first. Fasta file must have 'chr' in it.
@@ -35,13 +35,13 @@ The results will be placed in the directory 50_repeat/. Note the 50, this is the
 
 
 
-#### 3. Splitting FASTQ and mapping to the genome
+#### 3. Splitting FASTQ and mapping to the genome (use WZ3989-1_simple_index.txt above as a working example)
 
 The preprocessing of the data is now finished and you can start to map your data to the genome. The only thing you need is an index file, which contains the minimal information of your 4C experiment. Add the 1st restriction enzyme onto the end of your primer sequence. The structure of this file is as follows:
 
 |Experiment name | primer sequence + spacer + RE | path to reference genome | restriction enzyme 1 | restriction enzyme 2 | viewpoint chromosome |
 |---------- | ---------- | ----------|----------|----------|----------|
-|Nanog_enhancer | CGTATGCCAAGAACAGGTAACAGTTTCTGGATC**GATC** | ~/resources/hg19_sed.fa | GATC | GTAC | chr6 |
+|Nanog_enhancer | CGTATGCCAAGAACAGGTAACAGTTTCTGGATC**GATC** | /home/t.severson/resources/hg19_sed.fa | GATC | GTAC | chr6 |
 
 Note that the reference should also have bwa index. Also note that the second restriction enzyme is not strictly necessary, but the chromosome id should always be in the 6th column. Given the curre
 nt setup it is not possible to mix restriction enzyme combination or reference genomes. If you have multiple genomes or multiple restriction enzyme combinations please create a seperate index file
@@ -50,7 +50,7 @@ for each one.
 The following command is used to process and map your data.
 
 ```
-perl mapping_pipeline.pl WZ3989-1_simple_index.txt WZ3989-1 /DATA/t.severson/alex_4c/alex_files5986_1_WZ3989-1_ATCACG_S2_R1_001.fastq.gz 10 gatc_catc_fragment_map/ 50_repeat/50
+perl mapping_pipeline.pl WZ3989-1_simple_index.txt WZ3989-1 /DATA/t.severson/alex_4c/alex_files/5986_1_WZ3989-1_ATCACG_S2_R1_001.fastq.gz 10 gatc_catc_fragment_map/ 50_repeat/50
 ```
 
 More detailed information is given in the scripts themselves.
